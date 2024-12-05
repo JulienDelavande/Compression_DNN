@@ -2,76 +2,78 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-# Compression de Réseaux de Neurones Profonds
+# Compression of Deep Neural Networks
 
-Ce repository contient un notebook rédigé dans le cadre du module de Deep Learning de la dernière année à l'ISAE-Supaero. Il a été conçu pour servir de référence et d'exemple aux autres élèves de la filière, expliquant et démontrant plusieurs techniques de compression des réseaux de neurones profonds.
+This repository contains an educational notebook created during a Deep Learning module in my final year at ISAE-Supaero. The notebook serves as a reference and example for understanding and applying various compression techniques to deep neural networks. 
 
-## Table des matières
+All techniques presented here are adapted from the paper **"Compression of Deep Neural Networks"**. Full credit goes to the original authors.  
+[Paper link](https://arxiv.org/abs/1510.00149)
+
+## Table of Contents
 
 0. [Introduction](#introduction)
-1. [Test et entraînement du modèle](#1-test-et-entrainement-du-modèle)
-2. [Élagage (Pruning)](#2-élagage-pruning)
-3. [Quantification par partage de poids](#3-quantification-par-partage-de-poids)
-4. [Codage Huffman](#4-codage-huffman)
-5. [Nouvelles perspectives de compression](#5-nouvelles-perspectives-de-compression)
+1. [Model Training and Testing](#1-model-training-and-testing)
+2. [Pruning](#2-pruning)
+3. [Quantization via Weight Sharing](#3-quantization-via-weight-sharing)
+4. [Huffman Coding](#4-huffman-coding)
+5. [New Compression Perspectives](#5-new-compression-perspectives)
 6. [Conclusion](#6-conclusion)
 
 ## 0. Introduction
 
-Dans cette section, nous présentons le contexte et les objectifs de la compression des réseaux de neurones profonds.
+This section provides an overview of the context and objectives of deep neural network compression, discussing why compression is important and its practical benefits.
 
-## 1. Test et entraînement du modèle
+## 1. Model Training and Testing
 
-Cette section couvre le processus de test et d'entraînement initial du modèle de réseau de neurones avant d'appliquer les techniques de compression.
+We detail the initial training and evaluation of the neural network model before applying any compression techniques.
 
-## 2. Élagage (Pruning)
+## 2. Pruning
 
-L'élagage (pruning) est une technique de compression qui consiste à supprimer les poids les moins significatifs du réseau de neurones pour réduire sa taille tout en maintenant des performances acceptables.
+Pruning is a compression method that removes less significant weights in a neural network to reduce its size while maintaining acceptable performance.
 
-## 3. Quantification par partage de poids
+## 3. Quantization via Weight Sharing
 
-La quantification par partage de poids vise à réduire la taille du modèle en limitant le nombre de valeurs distinctes que les poids peuvent prendre, en les regroupant par plages de valeurs proches.
+Weight sharing reduces the size of the model by limiting the distinct values weights can take, grouping them into clusters of similar values.
 
-## 4. Codage Huffman
+## 4. Huffman Coding
 
-Le codage Huffman est une technique de compression sans perte qui peut être appliquée aux poids des réseaux de neurones pour réduire encore leur taille.
+Huffman coding is a lossless compression technique that can be applied to the weights of neural networks to further decrease their size.
 
-## 5. Nouvelles perspectives de compression
+## 5. New Compression Perspectives
 
-Dans cette section, nous explorons les techniques avancées et émergentes pour la compression des réseaux de neurones profonds, telles que la distillation des connaissances, l'utilisation de GAN, la quantification dynamique, le codage tensoriel et les réseaux sparsifiés dynamiques.
+This section explores advanced and emerging compression techniques such as knowledge distillation, GAN-based compression, dynamic quantization, tensor coding, and dynamically sparsified networks.
 
 ## 6. Conclusion
 
-Nous récapitulons les principales techniques de compression abordées et discutons de leur impact et de leur applicabilité dans divers scénarios.
+A summary of the main compression techniques, their impacts, and potential use cases is provided here.
 
-## Comment utiliser ce notebook
+## How to Use This Notebook
 
-1. **Cloner le repository :**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/votre-utilisateur/compression-de-reseaux-de-neurones-profonds.git
-   cd compression-de-reseaux-de-neurones-profonds
+   git clone https://github.com/your-username/compression-of-deep-neural-networks.git
+   cd compression-of-deep-neural-networks
    ```
 
-2. **Installer les dépendances :**
-   Assurez-vous d'avoir Python et pip installés, puis exécutez :
+2. **Install dependencies:**
+   Ensure you have Python and pip installed, then run:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Exécuter le notebook :**
-   Lancez Jupyter Notebook ou Jupyter Lab :
+3. **Run the notebook:**
+   Launch Jupyter Notebook or Jupyter Lab:
    ```bash
    jupyter notebook
    ```
-   Ouvrez `compression_de_reseaux_de_neurones_profonds.ipynb` pour explorer les différentes techniques de compression.
+   Open `compression_of_deep_neural_networks.ipynb` to explore the different compression techniques.
 
-**Alternativement, vous pouvez exécuter le notebook dans Google Colab**
-
+**Alternatively, you can execute the notebook directly on Google Colab using the badge above.**
 
 ## Contributions
 
-Les contributions sont les bienvenues ! Si vous avez des suggestions, des améliorations ou des corrections, n'hésitez pas à soumettre une pull request.
+Contributions are welcome! If you have suggestions, improvements, or corrections, feel free to submit a pull request.
 
 ## License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
