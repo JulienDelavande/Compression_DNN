@@ -1,3 +1,7 @@
+<a target="_blank" href="https://colab.research.google.com/github/JulienDelavande/Compression_DNN/blob/main/Compression_de_r%C3%A9seaux_de_neurones_profonds.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 # Compression de Réseaux de Neurones Profonds
 
 Ce repository contient un notebook rédigé dans le cadre du module de Deep Learning de la dernière année à l'ISAE-Supaero. Il a été conçu pour servir de référence et d'exemple aux autres élèves de la filière, expliquant et démontrant plusieurs techniques de compression des réseaux de neurones profonds.
